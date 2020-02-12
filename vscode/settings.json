@@ -1,0 +1,21 @@
+{
+    /**
+     * Locations:
+     * Windows: %APPDATA%\Code\User\settings.json
+     * Linux: $HOME/.config/Code/User/settings.json
+     * Mac: $HOME/Library/Application Support/Code/User/settings.json
+     */
+
+    // Editor
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    
+    // Terminal
+    "terminal.integrated.fontFamily": "Fira Code",
+
+    // Git
+    "git.autofetch": true,
+
+    // Workbench
+    "workbench.editor.enablePreviewFromQuickOpen": false
+}
