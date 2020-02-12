@@ -30,6 +30,7 @@ if (Test-Path $vscode_dir\$keybindings -PathType Leaf) {
     Copy-Item $vscode_dir\$keybindings -Destination $keybindings
 }
 
+# Stage, commit and push to master
 Write-Output "Pushing to git repo..."
 if (Test-Path $settings -PathType Leaf) {
     git add $settings
