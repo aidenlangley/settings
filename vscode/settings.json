@@ -14,7 +14,4 @@
 
     // Workbench
     "workbench.editor.enablePreviewFromQuickOpen": false,
-
-    // Prettier
-    "prettier.singleQuote": true,
 }
