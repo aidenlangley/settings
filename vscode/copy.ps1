@@ -13,6 +13,10 @@ $settings_backup = "settings_" + (Get-Date -Format "yyyyMMdd_HHmmss") + ".json"
 $keybindings = "keybindings.json"
 $keybindings_backup = "keybindings_" + (Get-Date -Format "yyyyMMdd_HHmmss") + ".json"
 
+# Pull changes from git repo
+Write-Output "Pulling from git repo..."
+git pull
+
 # Create backup directory if it doesn't exist
 if (-not (Test-Path -LiteralPath "$vscode_dir\backup")) {
     New-Item -Path "$vscode_dir\backup" -ItemType Directory > $null

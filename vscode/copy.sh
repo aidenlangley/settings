@@ -15,6 +15,10 @@ settings_backup="settings_$(date +"%Y%m%d_%H%M%S").json"
 keybindings="keybindings.json"
 keybindings_backup="keybindings_$(date +"%Y%m%d_%H%M%S").json"
 
+# Pull changes from git repo
+echo "Pulling from git repo..."
+git pull
+
 # If no backup folder exists, create it
 [ ! -d $vscode_dir/backup ] && mkdir $vscode_dir/backup
 
