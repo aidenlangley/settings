@@ -2,7 +2,7 @@
 # to keep things tidy
 $dir = Get-Location
 if ($dir -notlike "*settings\vscode") {
-    Write-Error "Run me from settings/vscode"
+    Write-Error "Run me from settings/vscode!"
     exit
 }
 
