@@ -2,6 +2,9 @@
     // Editor
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
+    "editor.rulers": [
+        80, 120
+    ],
     
     // Terminal
     "terminal.integrated.fontFamily": "Fira Code",
@@ -10,5 +13,8 @@
     "git.autofetch": true,
 
     // Workbench
-    "workbench.editor.enablePreviewFromQuickOpen": false
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+
+    // Prettier
+    "prettier.singleQuote": true,
 }
