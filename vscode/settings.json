@@ -1,17 +1,17 @@
 {
+    // Window
+    "window.enableMenuBarMnemonics": false,
+    // Workbench
+    "workbench.editor.enablePreviewFromQuickOpen": false,
     // Editor
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
     "editor.rulers": [
-        80, 120
+        80,
+        120
     ],
-    
     // Terminal
     "terminal.integrated.fontFamily": "Fira Code",
-
     // Git
     "git.autofetch": true,
-
-    // Workbench
-    "workbench.editor.enablePreviewFromQuickOpen": false,
 }
