@@ -10,8 +10,16 @@
         80,
         120
     ],
+    "editor.suggestSelection": "first",
     // Terminal
     "terminal.integrated.fontFamily": "Fira Code",
     // Git
     "git.autofetch": true,
+    "git.confirmSync": false,
+    // Intellicode
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    // JavaScript
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 }
