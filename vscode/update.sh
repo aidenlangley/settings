@@ -1,13 +1,26 @@
 #!/bin/bash
 
+if [[ $PWD != *"settings/vscode" ]]
+then
+    echo -e "\e[1;31mRun me from inside of settings/vscode!\e[1;0m"
+    exit 0
+fi
+
 # Includes
 source "../common.sh"
 
 # Variables
 vscode_dir="$HOME/.config/Code/User"
-backup_dir="$PWD/backup"
-settings="$PWD/settings.json"
-keybindings="$PWD/keybindings.json"
+settings="settings.json"
+keybindings="keybindings.json"
+
+# Backing up settings
+echo "Backing up settings..."
+[ -f $settings ] && mv $settings $settings.bak
+
+# Backing up keybindings
+echo "Backing up keybindings..."
+[ -f $keybindings ] && mv $keybindings $keybindings.bak
 
 # Copy over our new settings
 echo "Copying new settings..."

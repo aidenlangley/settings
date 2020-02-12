@@ -1,14 +1,20 @@
 #!/bin/bash
 
+if [[ $PWD != *"settings/vscode" ]]
+then
+    echo -e "\e[1;31mRun me from inside of settings/vscode!\e[1;0m"
+    exit 0
+fi
+
 # Includes
 source "../common.sh"
 
 # Variables
 vscode_dir="$HOME/.config/Code/User"
-settings="$PWD/settings.json"
-settings_backup=$settings"_$(date +"%Y%m%d_%H%M%S")"
-keybindings="$PWD/keybindings.json"
-keybindings_backup=$keybindings"_$(date +"%Y%m%d_%H%M%S")"
+settings="settings.json"
+settings_backup="settings_$(date +"%Y%m%d_%H%M%S").json"
+keybindings="keybindings.json"
+keybindings_backup="keybindings_$(date +"%Y%m%d_%H%M%S").json"
 
 # If no backup folder exists, create it
 [ ! -d $vscode_dir/backup ] && mkdir $vscode_dir/backup
