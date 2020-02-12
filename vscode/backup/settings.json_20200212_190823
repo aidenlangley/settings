@@ -1,0 +1,14 @@
+{
+    // Editor
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    
+    // Terminal
+    "terminal.integrated.fontFamily": "Fira Code",
+
+    // Git
+    "git.autofetch": true,
+
+    // Workbench
+    "workbench.editor.enablePreviewFromQuickOpen": false
+}
