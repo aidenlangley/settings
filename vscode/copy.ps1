@@ -1,8 +1,8 @@
 # Rudimentary error handling to ensure the script is run in the correct location
 # to keep things tidy
 $dir = Get-Location
-if ($dir -notlike '*settings\vscode') {
-    Write-Error 'Run me from settings/vscode'
+if ($dir -notlike "*settings\vscode") {
+    Write-Error "Run me from settings/vscode"
     exit
 }
 
