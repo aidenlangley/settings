@@ -5,16 +5,16 @@ source "../common.sh"
 
 # Variables
 vscode_dir="$HOME/.config/Code/User"
-settings="settings.json"
+settings="$PWD/settings.json"
 settings_backup=$settings"_$(date +"%Y%m%d_%H%M%S")"
-keybindings="keybindings.json"
+keybindings="$PWD/keybindings.json"
 keybindings_backup=$keybindings"_$(date +"%Y%m%d_%H%M%S")"
 
 # If no backup folder exists, create it
 [ ! -d $vscode_dir/backup ] && mkdir $vscode_dir/backup
 
 # Backup existing settings & keybindings
-echo $text_bold"Backing up settings & keybindings..."$text_normal
+echo $text_bold"Backing up settings & keybindings..."$text_reset
 
 echo "$vscode_dir/backup/$settings_backup"
 [ -f $vscode_dir/$settings ] && mv $vscode_dir/$settings $vscode_dir/backup/$settings_backup
@@ -25,7 +25,7 @@ echo "$vscode_dir/backup/$keybindings_backup"
 echo -e $color_green"Backup complete."$color_reset
 
 # Echo size of the folder to make user aware of any space issues
-echo $text_bold"Size of backup folder:"$text_normal
+echo $text_bold"Size of backup folder:"$text_reset
 du -sh $vscode_dir/backup
 
 # Copy over our new settings & keybindings

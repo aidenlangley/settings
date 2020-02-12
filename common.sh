@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Variables
-text_normal=$(tput sgr0)
+text_reset=$(tput sgr0)
 text_bold=$(tput bold)
 text_escape_seq_start="\e[1;"
 text_escape_seq_end="m"

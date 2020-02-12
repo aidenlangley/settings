@@ -6,8 +6,8 @@ source "../common.sh"
 # Variables
 vscode_dir="$HOME/.config/Code/User"
 backup_dir="$PWD/backup"
-settings="settings.json"
-keybindings="keybindings.json"
+settings="$PWD/settings.json"
+keybindings="$PWD/keybindings.json"
 
 # Copy over our new settings
 echo "Copying new settings..."
