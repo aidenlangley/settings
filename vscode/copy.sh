@@ -1,5 +1,4 @@
 #!/bin/bash
-
 if [[ $PWD != *"settings/vscode" ]]
 then
     echo -e "\e[1;31mRun me from inside of settings/vscode!\e[1;0m"
@@ -22,11 +21,13 @@ keybindings_backup="keybindings_$(date +"%Y%m%d_%H%M%S").json"
 # Backup existing settings & keybindings
 echo $text_bold"Backing up settings & keybindings..."$text_reset
 
-echo "$vscode_dir/backup/$settings_backup"
-[ -f $vscode_dir/$settings ] && mv $vscode_dir/$settings $vscode_dir/backup/$settings_backup
+$backup_path="$vscode_dir/backup/$settings_backup"
+echo $color_yellow$backup_path$color_reset
+[ -f $vscode_dir/$settings ] && mv $vscode_dir/$settings $backup_path
 
-echo "$vscode_dir/backup/$keybindings_backup"
-[ -f $vscode_dir/$keybindings ] && mv $vscode_dir/$keybindings $vscode_dir/backup/$keybindings_backup
+$backup_path="$vscode_dir/backup/$keybindings_backup"
+echo $color_yellow$backup_path$color_reset
+[ -f $vscode_dir/$keybindings ] && mv $vscode_dir/$keybindings $backup_path
 
 echo -e $color_green"Backup complete."$color_reset
 
