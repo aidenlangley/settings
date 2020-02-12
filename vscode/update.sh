@@ -1,28 +1,27 @@
 #!/bin/bash
 
+# Includes
+source "../common.sh"
+
 # Variables
-location="$HOME/.config/Code/User"
+vscode_dir="$HOME/.config/Code/User"
+backup_dir="$PWD/backup"
 settings="settings.json"
-backup="settings.json_$(date +"%Y%m%d_%H%M%S")"
-
-# Backup existing settings
-[ ! -d $PWD/backup ] && mkdir backup
-
-echo "Backing up to $PWD/backup/$backup."
-cp $settings $PWD/backup/$backup
-
-# Echo size of the folder to make user aware of any space issues
-echo "Size of backup folder:"
-du -sh $PWD/backup
+keybindings="keybindings.json"
 
 # Copy over our new settings
-echo "Copying new settings."
-cp $location/$settings $settings
+echo "Copying new settings..."
+[ -f $vscode_dir/$settings ] && cp $vscode_dir/$settings $settings
+
+# Copy over our new keybindings
+echo "Copying new keybindings..."
+[ -f $vscode_dir/$keybindings ] && cp $vscode_dir/$keybindings $keybindings
 
 # Stage, commit and push to master
-echo "Pushing to git repo."
-git add $settings
-git commit -m "New settings"
+echo "Pushing to git repo..."
+[ -f $settings ] && git add $settings
+[ -f $keybindings ] && git add $keybindings
+git commit -m "New files"
 git push
 
-echo "All done!"
+echo -e $color_green"All done!"$color_reset
