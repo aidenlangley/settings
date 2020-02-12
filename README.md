@@ -11,10 +11,14 @@ Extensions need to be installed manually as it stands.
 It will report on the size of the backup directory so it doesn't cause problems since it doesn't do anything fancy in regards to checking if the files are the same, or deleting backups older than a given date.
 
 ## Windows
-Run `vscode/copy.bat`.
+Run `vscode/copy.bat` to copy the `settings.json` to VS Code settings directory.
+
+Run `vscode/update.bat` to grab `settings.json` from VS Code settings directory, and upload it to this GitHub repository.
 
 ## Linux
-Run `vscode/copy.sh`.
+Run `vscode/copy.sh` to copy the `settings.json` to VS Code settings directory.
+
+Run `vscode/update.sh` to grab `settings.json` from VS Code settings directory, and upload it to this GitHub repository.
 
 ## Mac
 Nope.
