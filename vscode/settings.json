@@ -3,6 +3,7 @@
     "window.enableMenuBarMnemonics": false,
     // Workbench
     "workbench.editor.enablePreviewFromQuickOpen": false,
+    // "workbench.colorTheme": "Atom One Dark",
     // Editor
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
