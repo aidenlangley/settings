@@ -4,6 +4,7 @@
     // Workbench
     "workbench.editor.enablePreviewFromQuickOpen": false,
     // "workbench.colorTheme": "Atom One Dark",
+    "workbench.colorTheme": "New Moon",
     // Editor
     "editor.fontFamily": "Fira Code",
     "editor.fontLigatures": true,
@@ -23,6 +24,10 @@
     },
     // Vue
     "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // JSON
+    "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     // Terminal
