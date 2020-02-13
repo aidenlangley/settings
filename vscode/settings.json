@@ -13,6 +13,8 @@
     "editor.suggestSelection": "first",
     // Terminal
     "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+
     // Git
     "git.autofetch": true,
     "git.confirmSync": false,
