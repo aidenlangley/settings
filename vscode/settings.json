@@ -13,6 +13,14 @@
     ],
     "editor.suggestSelection": "first",
     "editor.smoothScrolling": true,
+    // JavaScript
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // HTML
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     // Terminal
     "terminal.integrated.fontFamily": "Fira Code",
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
@@ -21,8 +29,4 @@
     "git.confirmSync": false,
     // Intellicode
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    // JavaScript
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
 }
