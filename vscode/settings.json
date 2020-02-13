@@ -23,4 +23,5 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "editor.smoothScrolling": true,
 }
