@@ -21,6 +21,10 @@
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    // Vue
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     // Terminal
     "terminal.integrated.fontFamily": "Fira Code",
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
