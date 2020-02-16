@@ -14,6 +14,7 @@
     ],
     "editor.suggestSelection": "first",
     "editor.smoothScrolling": true,
+    "editor.formatOnSave": true,
     // JavaScript
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -30,6 +31,12 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    // Svelte
+    "[svelte]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    // CSS
+    "css.validate": false,
     // Terminal
     "terminal.integrated.fontFamily": "Fira Code",
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
