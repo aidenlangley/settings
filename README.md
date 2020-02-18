@@ -6,7 +6,7 @@ A repo to store my personal application settings.
 
 Only for global settings.
 
-The scripts found in the `vscode` folder will create a backup directory within your VS Code settings directory, move and rename the existing file to `settings.json_YYYYMMDD-HHMMSS` and copy the new `settings.json` in place of the old settings file.
+The scripts found in the `vscode` folder will create a backup directory within your VS Code settings directory, move and rename the existing file to `settings_YYYYMMDD-HHMMSS.json` and copy the new `settings.json` in place of the old settings file (same goes for `keybindings.json`).
 
 Extensions need to be installed manually as it stands.
 
