@@ -31,7 +31,7 @@ Nope.
 ## Workflow
 I have a Windows machine for gaming, then physically unplug the peripherals from my PC and into my laptop when I want to focus on work.
 
-Whenever I leave the OS I'm using I'll open up PowerShell or my terminal and `cd Code/settings/vscode && ./update.ps1` / `cd Code/settings/vscode && ./update.sh`.
+Whenever I leave the OS I'm using I'll open up PowerShell or my terminal and `cd $HOME/Code/settings/vscode && ./update.ps1` / `cd $HOME/Code/settings/vscode && ./update.sh`.
 
 Whenever I enter the new OS I'm using, same again, except call `copy.ps1` / `copy.sh`.
 
