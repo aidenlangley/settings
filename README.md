@@ -29,7 +29,7 @@ Run `vscode/update.ps1` to grab `settings.json` and `keybindings.json` from VS C
 Nope.
 
 ## Workflow
-I have a Windows machine for gaming, then physically unplug the hardware into my laptop when I want to focus on work.
+I have a Windows machine for gaming, then physically unplug the peripherals from my PC and into my laptop when I want to focus on work.
 
 Whenever I leave the OS I'm using I'll open up PowerShell or my terminal and `cd Code/settings/vscode && ./update.ps1` / `cd Code/settings/vscode && ./update.sh`.
 
