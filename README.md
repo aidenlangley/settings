@@ -14,15 +14,15 @@ It will report on the size of the backup directory so it doesn't cause problems 
 
 ## Windows
 
-Run `vscode/copy.ps1` to copy the `settings.json` and `keybindings.json` to VS Code settings directory.
+Run `cd vscode` then `./copy.ps1` to copy the `settings.json` and `keybindings.json` to VS Code settings directory.
 
-Run `vscode/update.ps1` to grab `settings.json` and `keybindings.json` from VS Code settings directory, and upload it to this GitHub repository.
+Run `cd vscode` then `./update.ps1` to grab `settings.json` and `keybindings.json` from VS Code settings directory, and upload it to this GitHub repository.
 
 ## Linux
 
-`chmod +x vscode/copy.sh` then run `./vscode/copy.sh` to copy the `settings.json` and `keybindings.json` to VS Code settings directory.
+`chmod +x vscode/copy.sh` then run `cd vscode && ./copy.sh` to copy the `settings.json` and `keybindings.json` to VS Code settings directory.
 
-`chmod +x vscode/update.sh` then run `./vscode/update.sh` to grab `settings.json` and `keybindings.json` from VS Code settings directory, and upload it to this GitHub repository.
+`chmod +x vscode/update.sh` then run `cd vscode && ./update.sh` to grab `settings.json` and `keybindings.json` from VS Code settings directory, and upload it to this GitHub repository.
 
 ## Mac
 
